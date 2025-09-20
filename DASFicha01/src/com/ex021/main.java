@@ -1,5 +1,6 @@
 package com.ex021;
 
+import com.ex021.executive.ExecutiveCar;
 import com.ex021.family.FamilyVehicleFactory;
 import com.ex021.interfaces.AbstractVehicleFactory;
 import com.ex021.interfaces.Car;
@@ -54,5 +55,11 @@ public class main {
         executiveCar.accelerate();
         executiveMotorcycle.displayInfo();
         executiveMotorcycle.accelerate();
+
+        //Se for necessario alterar atributos e necessário cast
+        ExecutiveCar myExecutiveCar = (ExecutiveCar) executiveCar;
+        myExecutiveCar.setModel("Mercedes S 580 Hybrid");
+        System.out.println("\n--|Alterar info de objeto|--");
+        myExecutiveCar.displayInfo();
     }
 }

@@ -20,4 +20,20 @@ public class ExecutiveCar implements Car {
     public void displayInfo() {
         System.out.println("Modelo: " + model + ", Blindado: " + isArmored + ".");
     }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public boolean isArmored() {
+        return isArmored;
+    }
+
+    public void setArmored(boolean armored) {
+        isArmored = armored;
+    }
 }
