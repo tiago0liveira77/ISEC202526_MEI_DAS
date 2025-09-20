@@ -45,6 +45,14 @@ public class main {
 
     //V2
     public static void executiveStuff(){
+        System.out.println("\n--- Criando veículos executivos ---");
+        AbstractVehicleFactory familyFactory = getFactory("executive");
+        Car executiveCar = familyFactory.createCar();
+        Moto executiveMotorcycle = familyFactory.createMoto();
 
+        executiveCar.displayInfo();
+        executiveCar.accelerate();
+        executiveMotorcycle.displayInfo();
+        executiveMotorcycle.accelerate();
     }
 }
