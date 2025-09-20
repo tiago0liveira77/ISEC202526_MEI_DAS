@@ -1,4 +1,4 @@
-package com.ex01.main;
+package com.ex01;
 
 import com.ex01.concretos.DogFactory;
 import com.ex01.fabrica.AnimalFactory;

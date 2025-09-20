@@ -1,4 +1,6 @@
-package com.ex02.concretos;
+package com.ex02.concretos.dog;
+
+import com.ex02.concretos.Animal;
 
 public class WildDog extends Animal implements Dog {
     public WildDog(String color) {

@@ -1,9 +1,9 @@
 package com.ex02.fabrica;
 
-import com.ex02.concretos.Dog;
-import com.ex02.concretos.PetDog;
-import com.ex02.concretos.PetTiger;
-import com.ex02.concretos.Tiger;
+import com.ex02.concretos.dog.Dog;
+import com.ex02.concretos.dog.PetDog;
+import com.ex02.concretos.tiger.PetTiger;
+import com.ex02.concretos.tiger.Tiger;
 
 public class PetAnimalFactory implements AnimalFactory {
     @Override
