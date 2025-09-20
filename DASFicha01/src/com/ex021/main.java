@@ -3,6 +3,7 @@ package com.ex021;
 import com.ex021.executive.ExecutiveCar;
 import com.ex021.family.FamilyVehicleFactory;
 import com.ex021.interfaces.AbstractVehicleFactory;
+import com.ex021.interfaces.Boat;
 import com.ex021.interfaces.Car;
 import com.ex021.interfaces.Moto;
 import com.ex021.sport.SportVehicleFactory;
@@ -18,6 +19,8 @@ public class main {
         //V2 - Implementar executiveStuff
         executiveStuff();
 
+        //v3
+        boatStuff();
     }
 
     public static void sportStuff(){
@@ -61,5 +64,16 @@ public class main {
         myExecutiveCar.setModel("Mercedes S 580 Hybrid");
         System.out.println("\n--|Alterar info de objeto|--");
         myExecutiveCar.displayInfo();
+    }
+
+    //V3
+    public static void boatStuff(){
+        System.out.println("\n--- Criando barcos ---");
+        AbstractVehicleFactory familyFactory = getFactory("sport");
+        Boat sportBoat = familyFactory.createBoat();
+
+        sportBoat.displayInfo();
+        sportBoat.navigate();
+
     }
 }
